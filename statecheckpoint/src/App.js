@@ -22,7 +22,7 @@ class App extends Component {
     }
     const checkIt = this.state.show;
       const styleCard = {
-        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+        boxShadow: "0 4px 8px 0 rgba(8, 5, 8, 0.2)",
         Width: "200px",
         textAlign: "center",
         marginTop: "20px",
@@ -31,16 +31,17 @@ class App extends Component {
       }
     return(
       <>
+       <center><button onClick={toggle}>{checkIt ? "Hide" : "Show"}</button></center>
       <div style={{marginLeft:"auto", marginRight:"auto", width:"370px", backgroundColor:"darkblue"}}>
       <div style={styleCard}>
-        <button onClick={toggle}>{checkIt ? "Hide" : "Show"}</button>
+       
         {
           checkIt && (<>
           <center>
           <img 
           src= {require("../src/randomprofile.jpg")}
           alt="random profile" 
-          style={{textAlign:"center", width:"150px"}} />
+          style={{textAlign:"center", width:"150px", borderRadius:"10px", marginTop:"10px"}} />
           </center>
           {this.person.name}
           <h2>{this.person.profession}</h2>
