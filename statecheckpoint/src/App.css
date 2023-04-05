@@ -1,13 +1,22 @@
 
 .bio {
   color: #112243;
-  font-size: 12px;
+  font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
 .biop {
-  color:rgb(49, 30, 30);
+  color:rgb(255, 134, 5);
   font-size: 13px;
   font-family: cursive;
+  margin: 15px;
+}
+
+.btn{
+  border-radius: 5px;
+  border-color: none;
+}
+.btn:hover{
+  background-color: aqua;
 }
